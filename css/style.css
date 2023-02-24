@@ -1229,7 +1229,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   right: 12px;
   top: 66%;
   text-align: center;
-  z-index: 5;
+  z-index: 2;
 }
 
 .page .player {
@@ -5373,10 +5373,6 @@ a.plyr__control:before {
   .page .our-plans__plan-info-blockTitle-logo {
     height: 32.38px;
     width: 121px;
-  }
-
-  .page .our-plans__plan-info-listItem {
-    min-height: 36px;
   }
 
   .page .our-plans .banners-slider__slide .banner h3 {
