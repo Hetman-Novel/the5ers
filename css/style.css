@@ -1466,11 +1466,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 33.3333%;
 }
 
-.page .our-plans__item:first-child .our-plans__name {
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
 .page .our-plans__item:nth-child(3) .our-plans__blockImage img {
   filter: brightness(3);
 }
@@ -1511,12 +1506,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .page .our-plans__title,
 .page .our-plans__name {
   font-size: 24px;
-  line-height: 26px;
   text-align: center;
 }
 
 .page .our-plans__title {
   color: #fff;
+  line-height: 26px;
   font-weight: 900;
   opacity: 0.7;
   position: relative;
@@ -1526,6 +1521,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .page .our-plans__name {
   color: #fff;
   opacity: 0.3;
+  line-height: 26px;
   margin-top: 27px;
   padding-left: 15%;
   padding-right: 15%;
@@ -1640,7 +1636,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   border-radius: 24px;
   margin-left: 15px;
   margin-right: 15px;
-  padding-bottom: 10px;
   width: calc(50% - 30px);
 }
 
@@ -1671,79 +1666,75 @@ body._touch .header .menu__list > li._active .menu__arrow {
   transform: translateY(-65%);
   top: 50%;
   text-align: center;
+  /*@include media-max-360 {
+     font-size: 26px;
+     line-height: 50px;
+  }*/
+}
+
+.page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem:last-child,
+.page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem:last-child {
+  border-radius: 0 0 24px 24px;
+  margin-top: 5px;
+}
+
+.page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem:last-child .column,
+.page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem:last-child .column {
+  color: #fff !important;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem:last-child {
+  background-color: #60A334;
+}
+
+.page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem .column:first-child {
+  color: #60A334;
 }
 
 .page .our-plans__plan-info-list {
+  min-height: 100%;
   list-style: none;
 }
 
 .page .our-plans__plan-info-listItem {
-  align-items: center;
   display: flex;
-  min-height: 56px;
-}
-
-.page .our-plans__plan-info-listItem:last-child {
-  border-radius: 0 0 7px 7px;
 }
 
 .page .our-plans__plan-info-listItem:nth-child(odd) {
   background-color: rgba(128, 216, 97, 0.1);
 }
 
+.page .our-plans__plan-info-listItem:last-child {
+  background-color: #5C5C5C;
+}
+
+.page .our-plans__plan-info-listItem:last-child .column {
+  font-weight: 700;
+}
+
 .page .our-plans__plan-info-listItem .column {
-  padding: 12px 0;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 14px 0;
   width: 50%;
 }
 
 .page .our-plans__plan-info-listItem .column:nth-child(1) {
-  align-items: center;
   color: #000;
-  display: flex;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 700;
+  padding-left: 26px;
 }
 
 .page .our-plans__plan-info-listItem .column:nth-child(2) {
   color: #5C5C5C;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 30px;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.page .our-plans__plan-info-listItem .column__wrap-icon {
-  display: flex;
-  flex-direction: column;
-  margin-left: 26px;
-  margin-right: 10px;
-  min-height: 30px;
-  min-width: 30px;
-  max-width: 30px;
-  position: relative;
-}
-
-.page .our-plans__plan-info-listItem .column__wrap-icon svg {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.page .our-plans__plan-info-listItem .column__text {
-  color: #C9C9C9;
-  font-size: 11px;
-  line-height: 12px;
-  font-weight: 400;
-  margin-bottom: 2px;
-  position: absolute;
-  left: 0;
-  top: -14px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -moz-box;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
 }
 
 .page .our-plans__blockText {
@@ -1756,6 +1747,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   font-size: 20px;
   line-height: 30px;
   text-align: justify;
+}
+
+.page .our-plans__btn-banners {
+  display: none;
 }
 
 .page .our-plans__wrap-banners {
@@ -3478,6 +3473,10 @@ a.plyr__control:before {
     display: none;
   }
 
+  .page .our-plans__name {
+    text-transform: uppercase;
+  }
+
   .page .our-plans .banners-slider__slide .two-banners {
     display: flex;
     margin-left: -5.5px;
@@ -3829,25 +3828,28 @@ a.plyr__control:before {
   }
 
   .page .our-plans__items {
-    margin-top: calc(8px + 12 * ((100vw - 320px) / 1600));
+    margin-top: calc(23px + -3 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__blockImage {
-    height: calc(86px + 114 * ((100vw - 320px) / 1600));
+    height: calc(110px + 90 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__blockImage {
-    width: calc(86px + 114 * ((100vw - 320px) / 1600));
+    width: calc(110px + 90 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__title,
   .page .our-plans__name {
-    font-size: calc(11px + 13 * ((100vw - 320px) / 1600));
+    font-size: calc(13px + 11 * ((100vw - 320px) / 1600));
   }
 
-  .page .our-plans__title,
+  .page .our-plans__title {
+    line-height: calc(14px + 12 * ((100vw - 320px) / 1600));
+  }
+
   .page .our-plans__name {
-    line-height: calc(16px + 10 * ((100vw - 320px) / 1600));
+    line-height: calc(23px + 3 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__name {
@@ -3855,7 +3857,7 @@ a.plyr__control:before {
   }
 
   .page .our-plans__plan-info {
-    margin-top: calc(12px + 61 * ((100vw - 320px) / 1600));
+    margin-top: calc(23px + 50 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info {
@@ -3871,7 +3873,7 @@ a.plyr__control:before {
   }
 
   .page .our-plans__plan-info {
-    padding-top: calc(12px + 9 * ((100vw - 320px) / 1600));
+    padding-top: calc(14px + 7 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-close {
@@ -3902,20 +3904,20 @@ a.plyr__control:before {
 
   .page .our-plans__plan-info-tabs-above-title,
   .page .our-plans__plan-info-title {
-    font-size: calc(14px + 19 * ((100vw - 320px) / 1600));
+    font-size: calc(13px + 20 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-tabs-above-title,
   .page .our-plans__plan-info-title {
-    line-height: calc(24px + 26 * ((100vw - 320px) / 1600));
+    line-height: calc(20px + 30 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-subtitle {
-    font-size: calc(11px + 13 * ((100vw - 320px) / 1600));
+    font-size: calc(13px + 11 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-subtitle {
-    line-height: calc(16px + 10 * ((100vw - 320px) / 1600));
+    line-height: calc(17px + 9 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-block-title {
@@ -3926,20 +3928,30 @@ a.plyr__control:before {
     line-height: calc(42px + 30 * ((100vw - 320px) / 1600));
   }
 
-  .page .our-plans__plan-info-listItem .column:nth-child(1) {
-    font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem:last-child .column,
+  .page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem:last-child .column {
+    font-size: calc(22px + 10 * ((100vw - 320px) / 1600));
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem:last-child .column,
+  .page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem:last-child .column {
+    line-height: calc(24px + 24 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-listItem .column:nth-child(1) {
-    line-height: calc(14px + 6 * ((100vw - 320px) / 1600));
+    font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  }
+
+  .page .our-plans__plan-info-listItem .column:nth-child(1) {
+    line-height: calc(14px + 16 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-listItem .column:nth-child(2) {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+    font-size: calc(9px + 11 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__plan-info-listItem .column:nth-child(2) {
-    line-height: calc(18px + 4 * ((100vw - 320px) / 1600));
+    line-height: calc(14px + 16 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__blockText p {
@@ -3947,7 +3959,7 @@ a.plyr__control:before {
   }
 
   .page .our-plans__blockText p {
-    line-height: calc(21px + 9 * ((100vw - 320px) / 1600));
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1600));
   }
 
   .page .our-plans__wrap-banners .swiper-button-prev {
@@ -4278,6 +4290,10 @@ a.plyr__control:before {
 
   .page__about-list-item:nth-child(4) {
     margin-top: 18%;
+  }
+
+  .page .our-plans__name {
+    font-weight: 700;
   }
 
   .footer {
@@ -4705,6 +4721,10 @@ a.plyr__control:before {
     padding-bottom: 265px;
   }
 
+  .page .our-plans__plan-info-listItem .column:nth-child(1) {
+    padding-left: 15px;
+  }
+
   .page .our-plans .banners-slider__slide .banner h3 {
     font-size: 21px;
     line-height: 33px;
@@ -4727,23 +4747,8 @@ a.plyr__control:before {
     margin-bottom: 45px;
   }
 
-  .page .our-plans__plan-info-listItem {
-    min-height: 46px;
-  }
-
   .page .our-plans__plan-info-listItem .column {
-    padding: 10px 0;
-  }
-
-  .page .our-plans__plan-info-listItem .column__wrap-icon {
-    min-height: 22px;
-    min-width: 22px;
-    max-width: 22px;
-    margin-left: 15px;
-  }
-
-  .page .our-plans__plan-info-listItem .column__text {
-    top: -8px;
+    padding: 11px 0 10px;
   }
 
   .page .our-plans .banners-slider__item:nth-child(1) {
@@ -4954,8 +4959,34 @@ a.plyr__control:before {
     margin-top: 45px;
   }
 
+  .page .our-plans__item:hover .our-plans__blockImage,
+  .page .our-plans__item.active .our-plans__blockImage {
+    border: 2px solid #80D861;
+  }
+
+  .page .our-plans__blockImage {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .page .our-plans__blockImage img {
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .page .our-plans__name {
+    padding-left: 12%;
+    padding-right: 12%;
+    font-weight: 400;
+  }
+
   .page .our-plans__plan-info {
     margin-bottom: -85px;
+  }
+
+  .page .our-plans__plan-info-subtitle {
+    padding-left: 17%;
+    padding-right: 17%;
+    font-weight: 700;
   }
 
   .page .our-plans__plan-info-blocks {
@@ -4979,10 +5010,9 @@ a.plyr__control:before {
     line-height: 54px;
   }
 
-  .page .our-plans__plan-info-listItem .column__wrap-icon {
-    min-height: 20px;
-    min-width: 20px;
-    max-width: 20px;
+  .page .our-plans__blockText {
+    padding-bottom: 32px;
+    padding-top: 16px;
   }
 
   .page .our-plans .banners-slider__slide .banner h3 {
@@ -5295,7 +5325,7 @@ a.plyr__control:before {
   }
 
   .page .our-plans {
-    margin-top: 50px;
+    margin-top: 51px;
   }
 
   .page .our-plans__plan-info {
@@ -5303,25 +5333,142 @@ a.plyr__control:before {
   }
 
   .page .our-plans__plan-info-tabs {
-    width: 360px;
+    width: 410px;
   }
 
   .page .our-plans__plan-info-tab {
-    font-size: 14px;
-    line-height: 24px;
-    height: 40px;
+    font-size: 15px;
+    line-height: 25px;
+    height: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .page .our-plans__plan-info-blocks {
+    margin-left: -14px;
+    margin-right: -18px;
     margin-top: 60px;
+  }
+
+  .page .our-plans__plan-info-wrap-blockTitle {
+    margin-left: auto;
+    margin-right: 5px;
+    width: 48%;
+  }
+
+  .page .our-plans__plan-info-wrap-blockTitle .our-plans__plan-info-blockTitle {
+    margin: calc(-11% - 2px) auto 6px;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) {
+    border-radius: 7px 0 0 12px !important;
+    width: calc(67% - 10px);
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem:last-child {
+    border-radius: 0 0 0 7px !important;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem .column:nth-child(1) {
+    width: 52%;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem .column:nth-child(2) {
+    color: #60A334;
+    width: 48%;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) {
+    border-radius: 0 7px 12px 0;
+    width: calc(33% - 10px);
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem:nth-child(odd) {
+    background-color: #EFEFEF !important;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem:last-child {
+    border-radius: 0 0 7px 0 !important;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) .our-plans__plan-info-listItem .column {
+    width: 100%;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) {
+    margin-right: 0;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem .column {
+    border-right: 5px solid #fff;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem .column:nth-child(1) {
+    padding-right: 12px;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(1) .our-plans__plan-info-listItem .column:nth-child(2) {
+    text-align: center;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) .column {
+    text-align: center;
+  }
+
+  .page .our-plans__plan-info-block:nth-child(2) .column:nth-child(1) {
+    display: none;
   }
 
   .page .our-plans__plan-info-blockTitle {
     margin-bottom: 5px;
+    width: 89px;
+  }
+
+  .page .our-plans__plan-info-blockTitle-logo {
+    height: 17.34px;
+    width: 96px;
+  }
+
+  .page .our-plans__plan-info-block-title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .page .our-plans__plan-info-listItem .column:nth-child(1) {
+    padding-left: 12px;
+  }
+
+  .page .our-plans__btn-banners {
+    background: #80D861;
+    border-radius: 4px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 22px -12px 19px -6px;
+    padding: 8px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(100% + 12px);
+  }
+
+  .page .our-plans__btn-banners span {
+    color: #020202;
   }
 
   .page .our-plans__wrap-banners {
-    margin-top: 50px;
+    display: none;
+    margin-bottom: 25px;
+    margin-top: 35px;
+  }
+
+  .page .our-plans__wrap-banners.show-banners {
+    display: block;
   }
 
   .page .footer {
@@ -5354,27 +5501,6 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 500.98px) {
-  .page .our-plans__plan-info-blocks {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .page .our-plans__plan-info-block {
-    border-radius: 14px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  .page .our-plans__plan-info-block:nth-child(2) {
-    margin-top: 70px;
-  }
-
-  .page .our-plans__plan-info-blockTitle-logo {
-    height: 32.38px;
-    width: 121px;
-  }
-
   .page .our-plans .banners-slider__slide .banner h3 {
     font-size: 14px;
     line-height: 26px;
@@ -5436,6 +5562,12 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 460.98px) {
+  .page .our-plans__plan-info-tabs {
+    margin-left: -5px;
+    margin-right: -5px;
+    max-width: 103%;
+  }
+
   .page .our-plans .banners-slider__item:nth-child(1) {
     flex: 0 0 108px;
   }
@@ -5511,23 +5643,59 @@ a.plyr__control:before {
     max-width: 44px;
     margin-top: 1px;
   }
+
+  .page .our-plans__blockImage {
+    height: 200px;
+    width: 200px;
+  }
+
+  .page .our-plans__title,
+  .page .our-plans__name {
+    font-size: 24px;
+  }
+
+  .page .our-plans__title {
+    line-height: 26px;
+  }
+
+  .page .our-plans__name {
+    line-height: 26px;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+@media screen and (max-width: 398.98px) and (max-width: 1920px) {
+  .page .our-plans__blockImage {
+    height: calc(90px + 110 * ((100vw - 320px) / 1600));
+  }
+
+  .page .our-plans__blockImage {
+    width: calc(90px + 110 * ((100vw - 320px) / 1600));
+  }
+
+  .page .our-plans__title,
+  .page .our-plans__name {
+    font-size: calc(11px + 13 * ((100vw - 320px) / 1600));
+  }
+
+  .page .our-plans__title {
+    line-height: calc(12px + 14 * ((100vw - 320px) / 1600));
+  }
+
+  .page .our-plans__name {
+    line-height: calc(18px + 8 * ((100vw - 320px) / 1600));
+  }
 }
 
 @media screen and (max-width: 372.98px) {
+  .page .our-plans__plan-info-blockTitle-logo {
+    height: 15.34px;
+    width: 94px;
+  }
+
   .page .our-plans .banners-slider__item:nth-child(1) {
     flex: 0 0 86px;
-  }
-}
-
-@media screen and (max-width: 360.98px) {
-  .page .our-plans__plan-info-blockTitle-logo {
-    height: 29.38px;
-    width: 118px;
-  }
-
-  .page .our-plans__plan-info-block-title {
-    font-size: 26px;
-    line-height: 50px;
   }
 }
 
