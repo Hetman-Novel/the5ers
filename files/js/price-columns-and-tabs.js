@@ -265,6 +265,62 @@ document.getElementById('tab-three-block-three').addEventListener("click", funct
    }, 1)
 });
 
+/* ============================ */
+if (window.matchMedia("(max-width: 576px)").matches) {
+   document.getElementById('our-plans-one').addEventListener("click", function () {
+      setTimeout(() => {
+         const boxes = document.querySelectorAll('.our-plans__plan-info-blockTitle')
+         if (boxes) {
+            let height = 0;
+            for (var i = 0; i < boxes.length; i++) {
+               var current_height = boxes[i].offsetHeight;
+               if (current_height > height) {
+                  height = current_height;
+               }
+            }
+            for (var i = 0; i < boxes.length; i++) {
+               boxes[i].style.height = height + 'px';
+            }
+         }
+      }, 1);
+   });
+   document.getElementById('our-plans-two').addEventListener("click", function () {
+      setTimeout(() => {
+         const boxes = document.querySelectorAll('.our-plans__plan-info-blockTitle')
+         if (boxes) {
+            let height = 0;
+            for (var i = 0; i < boxes.length; i++) {
+               var current_height = boxes[i].offsetHeight;
+               if (current_height > height) {
+                  height = current_height;
+               }
+            }
+            for (var i = 0; i < boxes.length; i++) {
+               boxes[i].style.height = height + 'px';
+            }
+         }
+      }, 1);
+   });
+   document.getElementById('our-plans-three').addEventListener("click", function () {
+      setTimeout(() => {
+         const boxes = document.querySelectorAll('.our-plans__plan-info-blockTitle')
+         if (boxes) {
+            let height = 0;
+            for (var i = 0; i < boxes.length; i++) {
+               var current_height = boxes[i].offsetHeight;
+               if (current_height > height) {
+                  height = current_height;
+               }
+            }
+            for (var i = 0; i < boxes.length; i++) {
+               boxes[i].style.height = height + 'px';
+            }
+         }
+      }, 1);
+   });
+}
+/* ============================ */
+
 // Button Show Banners
 document.getElementById('tab-one-banners-btn').addEventListener("click", function () {
    document.getElementById('tab-one-banners').classList.add('show-banners');

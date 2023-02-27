@@ -5347,17 +5347,13 @@ a.plyr__control:before {
   .page .our-plans__plan-info-blocks {
     margin-left: -14px;
     margin-right: -18px;
-    margin-top: 60px;
+    margin-top: 49px;
   }
 
   .page .our-plans__plan-info-wrap-blockTitle {
     margin-left: auto;
     margin-right: 5px;
-    width: 48%;
-  }
-
-  .page .our-plans__plan-info-wrap-blockTitle .our-plans__plan-info-blockTitle {
-    margin: calc(-11% - 2px) auto 6px;
+    width: calc(48% - 5px);
   }
 
   .page .our-plans__plan-info-block:nth-child(1) {
@@ -5424,7 +5420,7 @@ a.plyr__control:before {
   }
 
   .page .our-plans__plan-info-blockTitle {
-    margin-bottom: 5px;
+    margin: -22px auto 9px;
     width: 89px;
   }
 
