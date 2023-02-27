@@ -1843,6 +1843,288 @@ body._touch .header .menu__list > li._active .menu__arrow {
   justify-content: space-between;
 }
 
+/* Page - Certificate */
+
+.certificate-page .header__logo {
+  max-height: 24.93px;
+  max-width: 39.99px;
+}
+
+.certificate-page .header-container .menu-item svg {
+  color: #00C638;
+}
+
+.certificate-page .header__top {
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  height: 70px;
+  padding-left: 26px;
+  padding-right: 130px;
+}
+
+.certificate-page .header_leftColumn {
+  align-items: center;
+  display: flex;
+}
+
+.certificate-page .header_leftColumn-wrap {
+  align-items: center;
+  display: flex;
+}
+
+.certificate-page .header_leftColumn-name {
+  color: #fff;
+  font-size: 21px;
+  line-height: 27px;
+}
+
+.certificate-page .header_leftColumn-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 27px;
+  margin-left: 69px;
+}
+
+.certificate-page .header_rightColumn {
+  display: flex;
+}
+
+.certificate-page .header_rightColumn .header__link-login-credentials {
+  color: #fff;
+  font-size: 21px;
+  line-height: 32px;
+  margin: 4px 22px 0;
+}
+
+.certificate-page .header_rightColumn .header__link-login-credentials span {
+  margin-right: 4px;
+}
+
+.certificate-page .header_rightColumn .header__link-login-credentials span svg {
+  max-width: 100%;
+  min-width: 40px;
+}
+
+.certificate-page .header_rightColumn .header__new-account {
+  font-size: 21px;
+  line-height: 32px;
+  justify-content: center;
+  margin: 0 31px 0 0;
+  min-width: 160px;
+  text-align: center;
+}
+
+.certificate-page .header_rightColumn .header__userBlock {
+  position: relative;
+}
+
+.certificate-page .header_rightColumn .header__user-is-online {
+  background-color: transparent;
+  border-radius: 50%;
+  left: 27px;
+  height: 10px;
+  font-size: 0;
+  position: absolute;
+  top: 1px;
+  width: 10px;
+  z-index: 3;
+}
+
+.certificate-page .header_rightColumn .header__user-is-online.online {
+  background-color: #00C638;
+}
+
+.certificate-page .header_rightColumn .header__userBlock {
+  align-items: center;
+  display: flex;
+}
+
+.certificate-page .header_rightColumn .header__userBlock-icon {
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 40px;
+}
+
+.certificate-page .header_rightColumn .header__userBlock-icon svg {
+  left: 1px;
+  position: relative;
+}
+
+.certificate-page .header_rightColumn .header__userBlock-name {
+  color: #fff;
+  font-size: 21px;
+  line-height: 24px;
+  margin: 0 0 -5px;
+}
+
+.certificate-page .header_rightColumn .header__userBlock-email {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.certificate-page main.main {
+  margin-left: 0;
+  padding-top: 165px;
+  width: 100%;
+}
+
+.certificate-page__block-tabs {
+  background-color: #1E2021;
+  border-radius: 3px;
+  margin: 0 0 29px;
+  padding: 23px 32px 54px;
+  position: relative;
+}
+
+.certificate-page__block-tabs.two {
+  margin-bottom: 0;
+  margin-top: 74px;
+  padding-bottom: 25px;
+}
+
+.certificate-page__block-tabs.two .certificate-page__block-above-certificates-btn {
+  margin-top: 22px;
+  width: 100%;
+}
+
+.certificate-page__block-tabs-blockIcon {
+  align-items: center;
+  display: flex;
+  left: -12px;
+  position: absolute;
+  top: -52px;
+}
+
+.certificate-page__block-tabs-blockIcon-wrap-icon {
+  height: 33.26px;
+  width: 24.35px;
+}
+
+.certificate-page__block-tabs-blockIcon-text {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-left: 12px;
+}
+
+.certificate-page__block-tabs-blockText {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.certificate-page__block-tabsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 27px;
+}
+
+.certificate-page__block-tabs-listItem {
+  background-color: transparent;
+  border: 1px solid #00C638;
+  border-radius: 3px;
+  cursor: pointer;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5px;
+  padding: 7px 12px;
+  text-align: center;
+  transition: 0.3s;
+  width: 170px;
+}
+
+.certificate-page__block-tabs-listItem:hover,
+.certificate-page__block-tabs-listItem.active-teb {
+  background-color: #00C638;
+}
+
+.certificate-page__block-above-certificates {
+  background: #1E2021;
+  border-radius: 3px;
+  padding: 11px 15px 21px;
+}
+
+.certificate-page__block-above-certificates-blockIcon {
+  display: table;
+  height: 33.26px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24.35px;
+}
+
+.certificate-page__block-above-certificates-blockIcon svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.certificate-page__block-above-certificates-text {
+  color: #fff;
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.certificate-page__block-above-certificates-btn {
+  background: #00C638;
+  border-radius: 3px;
+  color: #fff;
+  display: table;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.certificate-page__certificates {
+  margin-bottom: 100px;
+  margin-top: 15px;
+}
+
+.certificate-page__certificate {
+  min-height: 100px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.certificate-page__certificate .demo-text {
+  left: 6px;
+  color: #fff;
+  position: absolute;
+  top: 1px;
+  z-index: 2;
+}
+
+.certificate-page__certificate:hover .certificate-page__certificate-wrap-image {
+  opacity: 1;
+}
+
+.certificate-page__certificate-wrap-image {
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
 /* Footer */
 
 .page .footer {
@@ -3442,6 +3724,23 @@ a.plyr__control:before {
   .section-slider__content {
     display: none;
   }
+
+  .certificate-page__block-tabs.two {
+    display: none;
+  }
+
+  .certificate-page__certificates {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .certificate-page__certificate {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(50% - 20px);
+  }
 }
 
 @media screen and (min-width: 641px) {
@@ -3488,6 +3787,17 @@ a.plyr__control:before {
     margin-right: 5.5px;
   }
 
+  .certificate-page__certificates {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .certificate-page__certificate {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(50% - 40px);
+  }
+
   .page .footer__wrap-text {
     order: -1;
     width: calc(100% - 300px);
@@ -3515,6 +3825,13 @@ a.plyr__control:before {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .certificate-page__wrap-certificates {
+    margin-left: 146px;
+    margin-right: 146px;
+  }
+}
+
 @media (min-width: 1024px) {
   .plyr:-webkit-full-screen .plyr__captions {
     font-size: 21px;
@@ -3528,6 +3845,28 @@ a.plyr__control:before {
   .plyr--fullscreen-fallback .plyr__captions {
     font-size: 21px;
     font-size: var(--plyr-font-size-xlarge, 21px);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .certificate-page__block-tabs {
+    margin: 0 0 50px;
+  }
+
+  .certificate-page__block-above-certificates {
+    padding: 11px 35px 21px;
+  }
+
+  .certificate-page__certificates {
+    margin-left: -55px;
+    margin-right: -55px;
+    margin-top: 31px;
+  }
+
+  .certificate-page__certificate {
+    margin-left: 55px;
+    margin-right: 55px;
+    width: calc(50% - 110px);
   }
 }
 
@@ -3573,6 +3912,81 @@ a.plyr__control:before {
     pointer-events: all;
     transform: translate(0, 0);
     visibility: visible;
+  }
+
+  .certificate-page .header {
+    padding-left: 95px;
+    padding-right: 35px;
+    top: 7px;
+  }
+
+  .certificate-page .header__logo {
+    left: 11px;
+    position: absolute;
+    top: 32px;
+  }
+
+  .certificate-page .header-container {
+    padding: 72px 10px 50px;
+    width: 60px;
+  }
+
+  .certificate-page .header-container .menu-item:hover svg,
+  .certificate-page .header-container .menu-item.current-menu-item svg,
+  .certificate-page .header-container .menu-item.current_page_item svg {
+    opacity: 1;
+    color: #fff;
+  }
+
+  .certificate-page .header-container .menu-item:hover .menu__link,
+  .certificate-page .header-container .menu-item.current-menu-item .menu__link,
+  .certificate-page .header-container .menu-item.current_page_item .menu__link {
+    background: rgba(0, 198, 56, 0.5);
+  }
+
+  .certificate-page .header-container .menu__wrap-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+  }
+
+  .certificate-page .header-container .menu__list > li:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .certificate-page .header-container .menu__wrap-icon,
+  .certificate-page .header-container .menu__link {
+    height: 40px;
+    width: 40px;
+  }
+
+  .certificate-page .header-container .menu__link {
+    background: transparent;
+    border-radius: 3px;
+    font-size: 0;
+    transition: 0.3s;
+  }
+
+  .certificate-page .header__top {
+    background-color: #272A2B;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-data {
+    margin-left: 5px;
+    transform: translateY(9%);
+  }
+
+  .certificate-page main.main {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .certificate-page__block-tabs {
+    margin: 0 25px 50px;
   }
 }
 
@@ -3659,6 +4073,20 @@ a.plyr__control:before {
   .header-container .menu__list li:hover .menu__arrow {
     color: inherit;
     transform: scale(1, -1);
+  }
+}
+
+@media screen and (min-width: 1100px) and (min-width: 1100px) {
+  .certificate-page main.main {
+    padding-left: 147px;
+    padding-right: 147px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .certificate-page .header {
+    padding-left: 117px;
+    padding-right: 63px;
   }
 }
 
@@ -3970,6 +4398,10 @@ a.plyr__control:before {
     right: calc(-23px + -8 * ((100vw - 320px) / 1600));
   }
 
+  .certificate-page .header__top {
+    padding-right: calc(0px + 130 * ((100vw - 320px) / 1600));
+  }
+
   .page .footer__wrap-text p {
     font-size: calc(13px + 19 * ((100vw - 320px) / 1600));
   }
@@ -4161,11 +4593,60 @@ a.plyr__control:before {
     padding-left: 7%;
     padding-right: 7%;
   }
+
+  .certificate-page .header__top {
+    padding-left: 15px;
+    padding-right: 60px;
+  }
+
+  .certificate-page .header_leftColumn-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .certificate-page .header_leftColumn-text {
+    font-size: 15px;
+    line-height: 26px;
+    margin-left: 30px;
+  }
+
+  .certificate-page .header_rightColumn .header__link-login-credentials {
+    font-size: 18px;
+    line-height: 29px;
+    margin-top: 5px;
+  }
+
+  .certificate-page .header_rightColumn .header__link-login-credentials span svg {
+    min-width: 34px;
+    max-width: 34px;
+    position: relative;
+    top: 2px;
+  }
+
+  .certificate-page .header_rightColumn .header__new-account {
+    font-size: 18px;
+    line-height: 29px;
+    min-width: 150px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-name {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-email {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 1366.98px) and (max-width: 1920px) {
   .section-slider__image {
     padding-bottom: calc(71px + 29 * ((100vw - 320px) / 1600));
+  }
+
+  .certificate-page .header__top {
+    padding-right: calc(0px + 60 * ((100vw - 320px) / 1600));
   }
 }
 
@@ -4468,6 +4949,140 @@ a.plyr__control:before {
   .page .our-plans .banners-slider__item:nth-child(1) {
     flex: 0 0 160px;
   }
+
+  .certificate-page .header__logo {
+    margin: 2px 12px 0 -16px;
+  }
+
+  .certificate-page .header__top {
+    padding-right: 0;
+  }
+
+  .certificate-page .header_leftColumn-wrap {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .certificate-page .header_leftColumn-wrap.show {
+    opacity: 1;
+  }
+
+  .certificate-page .header_leftColumn-name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .certificate-page .header_leftColumn-text {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 6px;
+  }
+
+  .certificate-page .header_rightColumn .header__link-login-credentials {
+    font-size: 14px;
+    line-height: 18px;
+    height: auto;
+    margin: 7px 0;
+    opacity: 0;
+  }
+
+  .certificate-page .header_rightColumn .header__link-login-credentials.show {
+    opacity: 1;
+  }
+
+  .certificate-page .header_rightColumn .header__link-login-credentials span svg {
+    min-width: 18px;
+    max-width: 18px;
+    top: 4px;
+  }
+
+  .certificate-page .header_rightColumn .header__new-account {
+    background: none;
+    display: table;
+    font-size: 14px;
+    line-height: 18px;
+    height: auto;
+    min-width: auto;
+    margin: 7px 0;
+    padding: 0;
+    text-align: left;
+    opacity: 0;
+  }
+
+  .certificate-page .header_rightColumn .header__new-account.show {
+    opacity: 1;
+  }
+
+  .certificate-page .header_rightColumn .header__user-is-online {
+    left: 23px;
+    top: 0;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock.open .header__userBlock-data {
+    opacity: 1;
+    pointer-events: all;
+    top: 57px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-icon {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-icon svg {
+    height: auto;
+    left: 0;
+    width: 16px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-data {
+    background-color: #303334;
+    border-radius: 3px;
+    opacity: 0;
+    padding: 18px 21px;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: 0.3s;
+    top: 75px;
+    width: 240px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-data::before {
+    background-color: #303334;
+    border-radius: 3px;
+    content: "";
+    right: 10px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -6px;
+    height: 16px;
+    width: 16px;
+    z-index: 0;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-name {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 2px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-email {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+
+  .certificate-page main.main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .certificate-page__block-tabs-blockIcon {
+    left: 20px;
+    top: -43px;
+  }
 }
 
 @media (max-width: 1099.98px) {
@@ -4706,6 +5321,12 @@ a.plyr__control:before {
   }
 }
 
+@media screen and (max-width: 1099.98px) and (max-width: 576.98px) {
+  .certificate-page .header_rightColumn .header__userBlock-data::before {
+    right: 7px;
+  }
+}
+
 @media screen and (max-width: 1024.98px) {
   .popup-video .popup__content .popup__info .popup__title {
     font-size: 24px;
@@ -4753,6 +5374,18 @@ a.plyr__control:before {
 
   .page .our-plans .banners-slider__item:nth-child(1) {
     flex: 0 0 140px;
+  }
+
+  .certificate-page__block-tabs {
+    padding-bottom: 33px;
+  }
+
+  .certificate-page__block-tabs-listItem {
+    width: 160px;
+  }
+
+  .certificate-page__certificate-wrap-image {
+    opacity: 1;
   }
 }
 
@@ -4854,6 +5487,16 @@ a.plyr__control:before {
     font-size: 17px;
     line-height: 27px;
     height: 42px;
+  }
+
+  .certificate-page main.main {
+    padding-top: 135px;
+  }
+
+  .certificate-page__block-tabsList {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
   }
 
   .page .footer {
@@ -5467,6 +6110,52 @@ a.plyr__control:before {
     display: block;
   }
 
+  .certificate-page .header_rightColumn {
+    width: 30px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .certificate-page .header_rightColumn .header__userBlock-icon svg {
+    width: 14px;
+  }
+
+  .certificate-page main.main {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 116px;
+  }
+
+  .certificate-page__block-tabs {
+    background-color: #3A3D3F;
+    border-radius: 4px;
+    padding: 14px 32px 19px;
+  }
+
+  .certificate-page__block-tabsList {
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: 18px;
+    max-width: 100%;
+  }
+
+  .certificate-page__block-tabs-listItem {
+    margin: 4px;
+    padding: 7px 4px;
+    width: calc(50% - 8px);
+  }
+
+  .certificate-page__block-above-certificates {
+    display: none;
+  }
+
+  .certificate-page__certificates {
+    margin-top: -5px;
+  }
+
   .page .footer {
     margin-top: 80px;
   }
@@ -5659,6 +6348,16 @@ a.plyr__control:before {
     padding-left: 7%;
     padding-right: 7%;
   }
+
+  .certificate-page .header_leftColumn-name {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .certificate-page .header_leftColumn-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 @media screen and (max-width: 398.98px) and (max-width: 1920px) {
@@ -5695,6 +6394,18 @@ a.plyr__control:before {
   }
 }
 
+@media screen and (max-width: 350.98px) {
+  .certificate-page .header_leftColumn-name {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .certificate-page .header_leftColumn-text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
 @media screen and (min-width: 1100px) and (max-width: 1920px) {
   .main {
     padding-left: calc(10px + 120 * ((100vw - 320px) / 1600));
@@ -5706,6 +6417,26 @@ a.plyr__control:before {
 
   .header__new-account {
     margin-right: calc(20px + 229 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 1100px) and (min-width: 1100px) and (max-width: 1920px) {
+  .certificate-page main.main {
+    padding-left: calc(0px + 147 * ((100vw - 320px) / 1600));
+  }
+
+  .certificate-page main.main {
+    padding-right: calc(0px + 147 * ((100vw - 320px) / 1600));
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+  .certificate-page__wrap-certificates {
+    margin-left: calc(0px + 146 * ((100vw - 320px) / 1600));
+  }
+
+  .certificate-page__wrap-certificates {
+    margin-right: calc(0px + 146 * ((100vw - 320px) / 1600));
   }
 }
 
