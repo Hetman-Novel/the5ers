@@ -6357,6 +6357,13 @@ a.plyr__control:before {
     margin-top: -15px;
     width: 30px;
   }
+
+  .page .our-plans__icons-item-blockIcon .sk-spinner-pulse {
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+  }
 }
 
 @media screen and (max-width: 640px) {
