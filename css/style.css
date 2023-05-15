@@ -2248,6 +2248,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   max-width: 1170px;
 }
 
+.vod-affiliate-body .footer .footer__wrap-text {
+  color: #fff;
+  order: 0;
+  margin-bottom: 14px;
+}
+
 .vod-affiliate-body .page__title {
   background: none !important;
   position: relative;
@@ -4601,6 +4607,10 @@ a.plyr__control:before {
     margin-right: 5.5px;
   }
 
+  .vod-affiliate-body .footer {
+    display: none !important;
+  }
+
   .certificate-page__certificates {
     margin-left: -20px;
     margin-right: -20px;
@@ -6107,12 +6117,6 @@ a.plyr__control:before {
 
   .vod-affiliate-body .header__new-account {
     background-color: #FFCC06;
-  }
-
-  .vod-affiliate-body .footer .footer__wrap-text {
-    color: #fff;
-    order: 0;
-    margin-bottom: 14px;
   }
 
   .programm__bg {
@@ -7947,12 +7951,6 @@ a.plyr__control:before {
 
   .header__new-account {
     margin-right: calc(20px + 229 * ((100vw - 320px) / 1600));
-  }
-}
-
-@media screen and (max-width: 1099.98px) and (min-width: 721px) {
-  .vod-affiliate-body .footer {
-    display: none;
   }
 }
 
