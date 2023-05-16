@@ -2406,8 +2406,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .programm__wrapLists ul li svg {
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 
 .programm__wrapLists ul li:nth-child(even) {
@@ -2418,7 +2418,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  left: 28%;
+  left: 31%;
   opacity: 0;
   width: 240px;
   margin-right: 3px;
@@ -5900,7 +5900,7 @@ a.plyr__control:before {
   }
 
   .programm__tooltip {
-    left: 32%;
+    left: 35%;
   }
 }
 
@@ -6829,7 +6829,7 @@ a.plyr__control:before {
   .programm__tooltip {
     left: 40px;
     padding: 8px 12px;
-    top: 13px;
+    top: 16px;
   }
 
   .programm__tooltip p {
