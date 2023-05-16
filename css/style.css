@@ -2282,13 +2282,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .programm__item {
+  background-color: #fff;
   border-radius: 21px;
-  overflow: hidden;
 }
 
 .programm__itemHead {
   align-items: center;
   background-color: #FFCC06;
+  border-radius: 21px 21px 0 0;
   display: flex;
   justify-content: center;
   padding: 22px 20px;
@@ -2303,11 +2304,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-}
-
-.programm__item-content {
-  background-color: #fff;
-  min-height: 100%;
 }
 
 .programm__item-content.no-lists {
@@ -2373,7 +2369,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   background-color: #898989;
   content: "";
   display: block;
-  height: 120%;
+  height: 102%;
   position: absolute;
   right: 0;
   top: 0;
@@ -2400,10 +2396,65 @@ body._touch .header .menu__list > li._active .menu__arrow {
   list-style: none;
   padding-bottom: 19px;
   padding-top: 19px;
+  position: relative;
+}
+
+.programm__wrapLists ul li.show-tooltip .programm__tooltip {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.programm__wrapLists ul li svg {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
 }
 
 .programm__wrapLists ul li:nth-child(even) {
   background-color: #F7F7F7;
+}
+
+.programm__tooltip {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  left: 28%;
+  opacity: 0;
+  width: 240px;
+  margin-right: 3px;
+  padding: 12px 15px;
+  position: absolute;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  top: 9px;
+  z-index: 3;
+}
+
+.programm__tooltip p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.programm__tooltip p:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.programm__tooltip::after {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: transparent;
+  border-top: transparent;
+  border-radius: 0 0 4px 0;
+  content: "";
+  display: block;
+  height: 16px;
+  left: 0;
+  position: absolute;
+  transform: rotate(46deg) translateY(12px);
+  top: 6px;
+  width: 16px;
+  z-index: -1;
 }
 
 .programm__block {
@@ -5847,6 +5898,10 @@ a.plyr__control:before {
   .page .our-plans .banners-slider__item:nth-child(1) {
     flex: 0 0 130px;
   }
+
+  .programm__tooltip {
+    left: 32%;
+  }
 }
 
 @media screen and (max-width: 1280.98px) and (max-width: 1920px) {
@@ -6121,6 +6176,10 @@ a.plyr__control:before {
 
   .programm__bg {
     display: none;
+  }
+
+  .programm__tooltip {
+    left: 30%;
   }
 
   .certificate-page .header__logo {
@@ -6603,6 +6662,10 @@ a.plyr__control:before {
     padding-left: 15px;
   }
 
+  .programm__tooltip {
+    left: 50px;
+  }
+
   .page .footer__social-listItem {
     height: 35px;
     margin-left: 12px;
@@ -6732,6 +6795,7 @@ a.plyr__control:before {
   }
 
   .programm__item:nth-child(3) {
+    background: none;
     border-radius: 0;
   }
 
@@ -6753,9 +6817,31 @@ a.plyr__control:before {
     padding-left: 42px;
   }
 
+  .programm__wrapLists ul:first-child::after {
+    height: 100%;
+  }
+
   .programm__wrapLists ul li svg {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
+  }
+
+  .programm__tooltip {
+    left: 40px;
+    padding: 8px 12px;
+    top: 13px;
+  }
+
+  .programm__tooltip p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .programm__tooltip::after {
+    height: 12px;
+    top: 4px;
+    transform: rotate(46deg) translateY(9px);
+    width: 12px;
   }
 
   .programm__button {
@@ -6986,11 +7072,6 @@ a.plyr__control:before {
     line-height: 18px;
     padding-bottom: 11px;
     padding-top: 11px;
-  }
-
-  .programm__wrapLists ul li svg {
-    height: 15px;
-    width: 15px;
   }
 
   .programm__block {
